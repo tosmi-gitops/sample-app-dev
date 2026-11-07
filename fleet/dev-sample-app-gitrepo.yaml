@@ -11,7 +11,7 @@ spec:
   correctDrift: {}
   forceSyncGeneration: 5
   paths:
-    - deployment/simple/base
+    - deployment/kustomize/base
   repo: https://github.com/tosmi-gitops/sample-app-dev.git
   targetNamespace: sample-app
   targets:

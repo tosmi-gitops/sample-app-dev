@@ -11,7 +11,7 @@ spec:
   correctDrift: {}
   forceSyncGeneration: 5
   paths:
-    - deployment/simple/overlays/prod
+    - deployment/kustomize/overlays/prod
   repo: https://github.com/tosmi/sample-app.git
   targetNamespace: sample-app
   targets:
