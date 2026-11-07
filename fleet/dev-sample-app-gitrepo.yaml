@@ -5,12 +5,14 @@ metadata:
     app: sample
     env: prod
   name: sample-app
-  namespace: sample-app
+  namespace: sample-app-dev
 spec:
   branch: main
   correctDrift: {}
   forceSyncGeneration: 5
-  repo: https://github.com/tosmi/sample-app.git
+  paths:
+    - deployment/simple
+  repo: https://github.com/tosmi-gitops/sample-app-dev.git
   targetNamespace: sample-app
   targets:
-  - clusterName: k3s-prod
+  - clusterName: k3s-dev
