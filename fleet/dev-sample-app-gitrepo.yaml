@@ -3,7 +3,7 @@ kind: GitRepo
 metadata:
   labels:
     app: sample
-    env: prod
+    env: dev
   name: sample-app
   namespace: sample-app-dev
 spec:
@@ -11,7 +11,7 @@ spec:
   correctDrift: {}
   forceSyncGeneration: 5
   paths:
-    - deployment/simple
+    - deployment/simple/base
   repo: https://github.com/tosmi-gitops/sample-app-dev.git
   targetNamespace: sample-app
   targets:
