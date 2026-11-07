@@ -1,0 +1,16 @@
+apiVersion: fleet.cattle.io/v1alpha1
+kind: GitRepo
+metadata:
+  labels:
+    app: sample
+    env: prod
+  name: sample-app
+  namespace: sample-app
+spec:
+  branch: main
+  correctDrift: {}
+  forceSyncGeneration: 5
+  repo: https://github.com/tosmi/sample-app.git
+  targetNamespace: sample-app
+  targets:
+  - clusterName: k3s-prod
