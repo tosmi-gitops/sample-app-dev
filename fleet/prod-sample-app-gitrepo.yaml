@@ -10,8 +10,9 @@ spec:
   branch: main
   correctDrift: {}
   forceSyncGeneration: 5
-  paths:
-    - deployment/kustomize/overlays/prod
+  bundles:
+    - base: deployment/kustomize
+      options: prod.yaml
   repo: https://github.com/tosmi/sample-app.git
   targetNamespace: sample-app
   targets:
